@@ -1,8 +1,8 @@
 import { ThemeProvider } from 'styled-components'
-import { Home } from './page/Home'
+import { TodoContextProvider } from './contexts'
+import { Home } from './pages/Home'
 import { GlobalStyle } from './styles/GlobalStyle'
 import { defaultTheme } from './styles/default'
-import { TodoContextProvider } from './contexts'
 
 function App() {
   return (
