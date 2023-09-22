@@ -8,5 +8,7 @@ export const HomeContainer = styled.div`
   flex-direction: column;
   align-items: center;
 
+  overflow-x: hidden;
+
   background-color: ${({ theme }) => theme.colors['gray-600']};
 `

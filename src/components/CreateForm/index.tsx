@@ -1,8 +1,8 @@
 import { SubmitHandler, useForm } from 'react-hook-form'
-import { Item } from '../../types/item'
 import { CreateB } from '../CreateButton'
 import { Input } from '../Input'
 import { FormContainer } from './style'
+import { Item } from '../../contexts'
 
 type CreateFormProps = {
   onTaskCreate: (data: Item) => void

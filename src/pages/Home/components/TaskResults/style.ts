@@ -16,7 +16,7 @@ export const TaskContainer = styled.div`
     align-items: center;
 
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 5rem;
     background-color: ${({ theme }) => theme.colors['gray-400']};
   }
 

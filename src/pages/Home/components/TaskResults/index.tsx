@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import clipboard from '../../../../assets/Clipboard.svg'
 import { Checkbox } from '../../../../components/Checkbox'
 import { DeleteB } from '../../../../components/DeleteButton'
@@ -13,30 +12,14 @@ import {
 } from './style'
 
 export const TaskResults = () => {
-  const { task, setTask } = useTask()
-  const [completedItems, setCompletedItems] = useState<{
-    [key: number]: boolean
-  }>({})
-
-  const handleTaskComplete = (id: number): void => {
-    setTask((prevTask) =>
-      prevTask.map((Item) =>
-        Item.id === id ? { ...Item, done: !Item.done } : Item,
-      ),
-    )
-
-    setCompletedItems((prevCompletedItems) => ({
-      ...prevCompletedItems,
-      [id]: !prevCompletedItems[id] || false,
-    }))
-  }
-
-  const handleTaskDelete = (id: number): void => {
-    setTask((prevTask) => prevTask.filter((Item) => Item.id !== id))
-  }
-
-  const taskCount = task.length
-  const taskCompleteCount = task.filter((Item) => Item.done).length
+  const {
+    task,
+    completedItems,
+    taskCount,
+    taskCompleteCount,
+    handleTaskComplete,
+    handleTaskDelete,
+  } = useTask()
 
   return (
     <TaskContainer>

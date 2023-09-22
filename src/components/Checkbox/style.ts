@@ -3,9 +3,8 @@ import styled from 'styled-components'
 export const CheckContainer = styled.div`
   display: flex;
   align-items: center;
-  padding: 0.19rem;
 
-  border-radius: 0.5rem;
+  border-radius: 5rem;
 
   cursor: pointer;
 
