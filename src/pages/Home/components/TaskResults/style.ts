@@ -6,9 +6,8 @@ export const TaskContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
   flex-direction: column;
-  top: 5rem;
+  margin: 2rem 0 3rem 0;
   gap: 1.5rem;
 
   button {

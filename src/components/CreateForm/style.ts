@@ -5,7 +5,7 @@ export const FormContainer = styled.form`
   max-width: 46rem;
 
   display: flex;
-  position: absolute;
-  top: 10.7rem;
+  position: relative;
+  top: -1.7rem;
   gap: 0.5rem;
 `
